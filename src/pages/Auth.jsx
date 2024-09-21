@@ -65,7 +65,7 @@ function Auth() {
             if(result.status==200){
                 sessionStorage.setItem("token",result.data.token)
                 sessionStorage.setItem("username",result.data.user)
-                // sessionStorage.setItem("userDetails",JSON.stringify(result.data.userDetails))
+                sessionStorage.setItem("userDetails",JSON.stringify(result.data.userDetails))
                 toast.success("Login success ")
                 Navigate('/')
                 setAuthStatus(true)
